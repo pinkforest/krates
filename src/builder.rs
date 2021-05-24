@@ -74,6 +74,7 @@ impl Cmd {
     }
 }
 
+#[allow(clippy::from_over_into)]
 impl Into<cm::MetadataCommand> for Cmd {
     fn into(mut self) -> cm::MetadataCommand {
         let mut mdc = cm::MetadataCommand::new();
